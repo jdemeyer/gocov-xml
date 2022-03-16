@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/axw/gocov"
+	"github.com/jdemeyer/gocov"
 )
 
 // Coverage information
@@ -135,7 +135,7 @@ func main() {
 				classes[className] = class
 			}
 
-			// from github.com/axw/gocov /gocov/annotate.go#printFunctionSource
+			// from github.com/jdemeyer/gocov /gocov/annotate.go#printFunctionSource
 			// Load the file for line information. Probably overkill, maybe
 			// just compute the lines from offsets in here.
 			setContent := false
